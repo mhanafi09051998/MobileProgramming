@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.muhammadhanafi.tugaskuliah.RegisterActivity">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SILAHKAN DAFTARKAN DIRI ANDA"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="25dp" />
+
+    <EditText
+        android:id="@+id/editTextNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView5"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="47dp"
+        android:ems="10"
+        android:hint="Masukkan Nama Anda"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextAlamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editTextNama"
+        android:layout_below="@+id/editTextNama"
+        android:ems="10"
+        android:hint="Masukkan Alamat Lengkap"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextNoTlp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editTextAlamat"
+        android:layout_below="@+id/editTextAlamat"
+        android:ems="10"
+        android:hint="Masukkan No Telp"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editTextNoTlp"
+        android:layout_below="@+id/editTextNoTlp"
+        android:ems="10"
+        android:hint="Masukkan Email Anda"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editTextEmail"
+        android:layout_below="@+id/editTextEmail"
+        android:ems="10"
+        android:hint="Masukkan Password Email"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnDaftar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextPassword"
+        android:layout_marginStart="28dp"
+        android:layout_toEndOf="@+id/editTextNoTlp"
+        android:text="DAFTAR" />
+
+
+    <CheckBox
+        android:id="@+id/cekboxjava"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextPassword"
+        android:layout_marginTop="5dp"
+        android:text="Java Programming"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/cekboxnet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cekboxjava"
+        android:layout_marginTop="5dp"
+        android:text="Internet Networking"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupNb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/cekboxnet" >
+
+        <RadioButton
+            android:id="@+id/radioLaki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Laki-laki" />
+
+        <RadioButton
+            android:id="@+id/radioPerempuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perempuan" />
+
+    </RadioGroup>
+
+
+</RelativeLayout>
