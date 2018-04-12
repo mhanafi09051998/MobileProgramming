@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ContohSpinner</string>
+
+    <string-array name="german_familienname">
+        <item>MAKAN</item>
+        <item>BELAJAR</item>
+        <item>MINUM</item>
+        <item>MANDI</item>
+        <item>CODING</item>
+    </string-array>
+</resources>
